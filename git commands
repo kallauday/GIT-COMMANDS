@@ -1,0 +1,255 @@
+							GIT COMMANDS
+1.git config
+			Usage: git config –global user.name “[name]”  
+			Usage: git config –global user.email “[email address]”
+			
+			{This command sets the author name and email address
+			respectively to be used with your commits}
+			
+cmd: 	git config --global user.mail "udaykalla96@gmail.com"
+		git config --global user.name "kukn"
+			
+2.git init
+			Usage: git init [repository name]
+			
+            {This command is used to start a new repository}
+		
+cmd:	git init
+
+3.git clone
+			Usage: git clone [url]
+			
+			{This command is used to obtain a repository from an existing URL}
+			
+cmd:	git clone https://github.com/kukn/practice.git
+
+4.git add
+			Usage: git add [file]
+			
+			{This command adds a file to the staging area.}
+			
+cmd     git add practice
+				or
+		git add * (all)
+
+5.git commit
+			Usage: git commit -m “[ Type in the commit message]”
+			
+			{This command records or snapshots the file permanently in
+			the version history.}
+			
+cmd:	git commit -m "my first project"
+
+			Usage: git commit -a  
+
+			{This command commits any files you’ve added with the git add
+			command and also commits any files you’ve changed since then}
+
+cmd:	git commit -a
+6.git diff
+			Usage: git diff  
+
+			{This command shows the file differences which are not yet staged.}
+			
+cmd:	git diff
+
+			Usage: git diff –staged 
+
+			{This command shows the differences between the files in the staging area and 
+			the latest version present.}
+			
+cmd:	git diff --staged
+
+			Usage: git diff [first branch] [second branch]  
+
+			{This command shows the differences between the two branches mentioned.}
+			
+cmd:	git diff branch_2 branch_3
+
+7.git reset
+			Usage: git reset [file]  
+
+			{This command unstages the file, but it preserves the file contents.}
+			
+cmd:	git reset site.css
+
+			Usage: git reset [commit]  
+
+			{This command undoes all the commits after the specified
+			commit and preserves the changes locally.}
+			
+cmd:	git reset 9bhfjvigibkjv5455fvfdvvg
+
+			Usage: git reset –hard [commit]  
+			
+			{This command discards all history and goes back to the specified commit.}
+			
+cmd:	git reset --hard 10bhihnfegfgfdgvvbfgffghfgf16
+
+8.git status
+			Usage: git status  
+
+			{This command lists all the files that have to be committed.}
+			
+cmd:	git status [red colour] - staging area
+		git status [green colour] - local repository
+
+9.git rm
+			Usage: git rm [file]  
+
+			{This command deletes the file from your working directory and stages the deletion.}
+			
+cmd:	git rm example.txt
+
+10.git log
+			Usage: git log  
+
+			{This command is used to list the version history for the current branch.}
+			
+cmd:	git log
+
+			Usage: git log –follow[file]  
+
+			{This command lists version history for a file, including the renaming of files also}
+			
+cmd:	git log --follow project_1
+
+11.git show
+			Usage: git show [commit]  
+
+			{This command shows the metadata and content changes of the specified commit.}
+		
+cmd:	git show b10253fuhjfnvbfgjvnjjjvjk106
+
+12.git tag
+			Usage: git tag [commitID]  
+
+			{This command is used to give tags to the specified commit.}
+
+cmd:	git tag b15235euvfueubvbdsbvggu106
+
+13.git branch
+			Usage: git branch  
+
+			{This command lists all the local branches in the current repository.}
+
+cmd:	git branch
+
+			Usage: git branch [branch name]  
+
+			{This command creates a new branch}
+			
+cmd:	git branch branch_1
+
+			Usage: git branch -d [branch name]  
+
+			{This command deletes the feature branch.}
+
+cmd:	git branch -d branch_1
+
+14.git checkout
+			Usage: git checkout [branch name]  
+
+			{This command is used to switch from one branch to another.}
+
+cmd:	git checkout branch_2
+
+			Usage: git checkout -b [branch name]  
+
+			{This command creates a new branch and also switches to it}
+
+cmd:	git checkout -b branch_4
+
+15.git merge
+			Usage: git merge [branch name]  
+
+			{This command merges the specified branch’s history into the current branch.}
+
+cmd:	git merge branch_2
+
+16.git remote
+			Usage: git remote add [variable name] [Remote Server Link]  
+
+			{This command is used to connect your local repository to the remote server}
+
+cmd:	git remote add origin https://github.com/kukn/practice.git
+
+17.git push
+			Usage: git push [variable name] master  
+
+			{This command sends the committed changes of master branch to your remote repository.}
+
+cmd:	git push origin master
+
+			Usage: git push [variable name] [branch]  
+
+			{This command sends the branch commits to your remote repository}
+			
+cmd:	git push origin master
+
+			Usage: git push –all [variable name]  
+
+			{This command pushes all branches to your remote repository.}
+			
+cmd:	git push --all origin
+
+			Usage: git push [variable name] :[branch name]  
+
+			{This command deletes a branch on your remote repository.}
+			
+cmd:	git push origin: branch_2
+
+18.git pull
+			Usage: git pull [Repository Link]  
+
+			{This command fetches and merges changes on the remote server to your working directory.}
+			
+cmd:	git pull https://github.com/kukn/practice.git
+
+19.git stash
+			Usage: git stash save  
+
+			{This command temporarily stores all the modified tracked files.}
+			
+cmd:	git stash save
+
+			Usage: git stash pop  
+
+			{This command restores the most recently stashed files}
+
+cmd:	git stash pop 
+
+			Usage: git stash list  
+
+			{This command lists all stashed changesets}
+			
+cmd:	git stash list
+
+			Usage: git stash drop  
+
+			{This command discards the most recently stashed changeset.}
+
+cmd:	git stash drop stash@{0}
+
+
+							git cmd list
+								
+								git config
+								git init
+								git clone
+								git add
+								git commit
+								git diff
+								git reset
+								git status
+								git rm
+								git log
+								git show
+								git tag
+								git branch
+								git checkout
+								git merge
+								git remote
+								git push
+								git pull
+								git stash
